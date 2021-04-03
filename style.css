@@ -1,0 +1,13 @@
+body{
+    background-color:#000083;
+    color: white;
+    font-family:'Lucida Console', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 120%;
+    padding-left: 5%;
+}
+
+#os {
+    color: #000083;
+    text-align:center;
+    padding-top: 20%;
+}
