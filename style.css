@@ -2,12 +2,20 @@ body{
     background-color:#000083;
     color: white;
     font-family:'Lucida Console', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
-    font-size: 120%;
-    padding-left: 5%;
+    font-size: 1.5em;
+}
+p{
+    padding-left: 5em;
+    margin: 5px 0;
 }
 
 #os {
     color: #000083;
     text-align:center;
-    padding-top: 20%;
+    padding-top: 7em;
 }
+table{
+    padding-left: 5em;
+}
+
+
