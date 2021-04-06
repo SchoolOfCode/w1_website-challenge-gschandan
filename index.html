@@ -23,11 +23,12 @@
                 <p>A problem has been detected and windows has been shut down to prevent damage to your computer.</p> 
                 <p>The problem seems to have been caused by the loading the following user profile: tom_walker</p>
                 <br><br>
-                <p>For further information, please enter your command below.</p>
-                <p>Available commands include: <i>cat profile_log.txt, open prof_pic.jpg</i></p>
+                <p>For further information, please enter your commands below.</p>
+                <p>Available commands include: <i>cat profile.txt, open profilepic.jpg</i></p>
                 <br>
             </div>
-            <div class="profile">
+            <div id="profile">
+                <p>C:\Users\Tom>cat profile.txt</p><br>
                 <p id="profile_text">
                 Hi, I'm Tom. I am a budding front-end developer with a background in psychology and neuroscience.
                 I work as the CEO of VeenPool Media, and am experienced in leadership, teamworking and web-dev.
@@ -38,11 +39,14 @@
                     <label>HTML: </label><progress id="prog_html" max="100" value="70">70%</progress>
                     <label>CSS: </label><progress id="prog_css" max="100" value="60">60%</progress>
                     <label>JS: </label><progress id="prog_js" max="100" value="30">30%</progress><br>
-
+                    <label>Leadership: </label><progress id="prof_lead" max="100" value="90"></progress>
+                    <label>Teamwork: </label><progress id="prof_team" max="100" value="95">95%</progress>
+                    <label>Communication: </label><progress id="prof_comm" max="100" value="98">98%</progress><br>
                 </div>
             </div>
             <div id="pic">
-
+                <p>C:\Users\Tom>open profilepic.jpg</p><br>
+                <img src="images\festival_1.jpg" alt="A Picture of Tom with his family/friends">
             </div>
             <div id="command_line">
                 <div id="path">
@@ -52,16 +56,19 @@
                     <form><input type="text" id="argument" onchange="load(this.value)" autofocus></form>
                     <script>
                         function load(val){
-                            let s = val;
-                            switch(s){
-                                case "cat profile_log.txt":
-                                    alert("1");
+                            switch(val){
+                                case "cat profile.txt":
+                                    document.getElementById("profile").style.display = "block";
+                                    document.getElementById("pic").style.display = "none";
                                     break;
-                                case "open prof_pic.jpg":
-                                    alert("2");
+                                case "open profilepic.jpg":
+                                    document.getElementById("profile").style.display = "none";
+                                    document.getElementById("pic").style.display = "block";  
                                     break;
                                 default:
-                                    alert("Incorrect entry");
+                                    document.getElementById("profile").style.display = "none";
+                                    document.getElementById("pic").style.display = "none"; 
+                                    alert("Command not recognised");
                             }
                         }   
                     </script>

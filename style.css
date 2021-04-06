@@ -38,26 +38,33 @@ main{
     min-height: 100%;
     margin-bottom: -1.5em;
 }
-.profile #profile_text{
+
+/*-------------Body-ProfileContent---------------------*/
+#profile{
+    display: none;
+}
+#profile_text{
     margin: 0 0 2em 0;
 }
-.profile_skills{
+#profile_skills{
     margin: 0 0 2em 0;
 }
 progress{
     width: 5em;
     background-color: #a9aaaa;
-
+    border: none;
+    display: block;
+    padding: 4px;
 }
-
-
-
-
+/*-------------Body-Picture---------------------*/
+#pic{
+    display:none;
+}
 /*-------------Body-CLI---------------------*/
 
 #command_line{
     margin-top: 2em;
-    display: flex;
+    display: inline-flex;
 }
 #argument{
     background-color:#000083;
