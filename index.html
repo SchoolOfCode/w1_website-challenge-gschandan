@@ -2,40 +2,74 @@
 <html>
     <link rel="stylesheet" href="style.css">
     <head>
-        <title>Error: tom_walker</title>
+        <title>Exception Error</title>
     </head>
     <body>
-        
-        <nav id="navbar">
-            <a accesskey="s">Test</p>
-        </nav>
-
+        <div id="nav_bg">
+            <nav class="navbar">
+                <a href="#index">[Home]</a>
+                <a href="#profile">[Profile]</a>
+                <a href="#gallery">[Gallery]</a>
+            </nav>
+        </div>
         <header>
             <h1 aria-label="A profile page for Tom Walker"></h1>
-            <!--h1 for accessibility, utilising the non-visible label via aria attribute -->
-            <h3 id="os"> <span style="background-color: #a9aaaa;"> Windows 95 </span></h3>
+            <!--h1 for accessibility only -->
+            <h3 id="os_surround"> <span id="os"> Windows 95 </span></h3>
         </header>
 
         <main>
-            
-            <p>A problem has been detected and windows has been shut down to prevent damage to your computer.</p> 
-            <p>The problem seems to have been caused by the following user: tom_walker</p>
-            <br><br>
-            <p>For further information, please enter your command below.</p>
-            <p>Acceptable commands include: <i>ls, cat, open, exit</i></p>
-            <br>
+            <div id="main">
+                <p>A problem has been detected and windows has been shut down to prevent damage to your computer.</p> 
+                <p>The problem seems to have been caused by the loading the following user profile: tom_walker</p>
+                <br><br>
+                <p>For further information, please enter your command below.</p>
+                <p>Available commands include: <i>cat profile_log.txt, open prof_pic.jpg</i></p>
+                <br>
+            </div>
+            <div class="profile">
+                <p id="profile_text">
+                Hi, I'm Tom. I am a budding front-end developer with a background in psychology and neuroscience.
+                I work as the CEO of VeenPool Media, and am experienced in leadership, teamworking and web-dev.
+                In my spare time, when I'm not cooking or chilling with friends and family, I enjoy listening to Electronic, Jazz and Classical music.
+                </p>
+                <div id="profile_skills">
+                    <p>My Skills:</p><br>
+                    <label>HTML: </label><progress id="prog_html" max="100" value="70">70%</progress>
+                    <label>CSS: </label><progress id="prog_css" max="100" value="60">60%</progress>
+                    <label>JS: </label><progress id="prog_js" max="100" value="30">30%</progress><br>
+
+                </div>
+            </div>
+            <div id="pic">
+
+            </div>
             <div id="command_line">
                 <div id="path">
                     <p>C:\Users\Tom></p>
                 </div>
                 <div id="commands">
-                    <input type="text" id="argument" autofocus>
-                    <input type="hidden" value=".html">
+                    <form><input type="text" id="argument" onchange="load(this.value)" autofocus></form>
+                    <script>
+                        function load(val){
+                            let s = val;
+                            switch(s){
+                                case "cat profile_log.txt":
+                                    alert("1");
+                                    break;
+                                case "open prof_pic.jpg":
+                                    alert("2");
+                                    break;
+                                default:
+                                    alert("Incorrect entry");
+                            }
+                        }   
+                    </script>
                 </div>
             </div>     
         </main>
         <footer>
-            <p>v2.6.2 Produced for SoC BootCamp 2021</p>
+            <p>v2.1 Produced for SoC BootCamp 2021</p>
         </footer>
     </body>
 </html>

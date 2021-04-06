@@ -1,58 +1,76 @@
+/*---------CSS reset---------------------------*/
 *{
     margin: 0;
 }
+@font-face{
+    font-family: fixedsys;
+    src: url(fixedsys.ttf);
+}
+/*-------------Body----------------------------*/
 body{
     background-color:#000083;
     color: white;
-    font-family: monospace;
+    font-family: fixedsys;
     font-size: 1.5em;
-    margin: 0; 
+    height: 100%;
 }
-main{
-    margin: 5em;
+/*-------------Body-NavBar-------------------------*/
+#nav_bg{
+    background-color: #a9aaaa;
 }
+.navbar{
+    text-align: center;
+    word-spacing: 5em;
+}
+/*-------------Body-Header-------------------------*/
 #os{
+    background-color: #a9aaaa;
+}
+#os_surround{
     color: #000083;
     text-align: center;
     margin-top: 5em;
 }
 
-#navbar{
-    background-color: #a9aaaa;
+/*-------------Body-MainContent---------------------*/
+main{
+    padding: 2em 4em 6em;
+    min-height: 100%;
+    margin-bottom: -1.5em;
 }
-footer{
+.profile #profile_text{
+    margin: 0 0 2em 0;
+}
+.profile_skills{
+    margin: 0 0 2em 0;
+}
+progress{
+    width: 5em;
     background-color: #a9aaaa;
-    text-align: center;
-    vertical-align: baseline;
+
 }
 
+
+
+
+/*-------------Body-CLI---------------------*/
+
 #command_line{
+    margin-top: 2em;
     display: flex;
 }
 #argument{
     background-color:#000083;
     color: white;
-    font-family:monospace;
-    font-size: 1.5em;
+    font-family:fixedsys;
+    font-size: 1em;
     outline: none;
     border: none;
 }
 
-#input:after{
-    content: '_';
-    width: 10px;
-    height: 2px;
-    opacity: 0;
-    animation: blinking 0.6s linear infinite alternate;
+/*-------------Body-Footer---------------------*/
+footer{
+    background-color: #a9aaaa;
+    text-align: center;
+    height: 1.5em;
 }
-/*Adapted from https://stackoverflow.com/a/36118384/15347906 */
-@keyframes blinking{
-    100%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-}
-
-
