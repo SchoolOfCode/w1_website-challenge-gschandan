@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="style.css">
     <head>
         <title>Exception Error</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="nav_bg">
-            <nav class="navbar">
-                <a href="#index">[Home]</a>
-                <a href="#profile">[Profile]</a>
-                <a href="#gallery">[Gallery]</a>
-            </nav>
-        </div>
         <header>
-            <h1 aria-label="A profile page for Tom Walker"></h1>
-            <!--h1 for accessibility only -->
-            <h3 id="os_surround"> <span id="os"> Windows 95 </span></h3>
+            <div id="nav_bg">
+                <nav class="navbar">
+                    <a href="#index">[Home]</a>
+                    <a href="#profile">[Profile]</a>
+                    <a href="#gallery">[Gallery]</a>
+                </nav>
+            </div>
+                <h1 aria-label="A profile page for Tom Walker"></h1>
+                <!--h1 for accessibility only -->
+                <h2 id="os_surround"> <span id="os"> Windows 95 </span></h2>
         </header>
 
         <main>
@@ -24,7 +24,7 @@
                 <p>The problem seems to have been caused by the loading the following user profile: tom_walker</p>
                 <br><br>
                 <p>For further information, please enter your commands below.</p>
-                <p>Available commands include: <i>cat profile.txt, open profilepic.jpg</i></p>
+                <p>Available commands include: <em>cat profile.txt, open profilepic.jpg</em></p>
                 <br>
             </div>
             <div id="profile">
@@ -34,26 +34,35 @@
                 I work as the CEO of VeenPool Media, and am experienced in leadership, teamworking and web-dev.
                 In my spare time, when I'm not cooking or chilling with friends and family, I enjoy listening to Electronic, Jazz and Classical music.
                 </p>
+                <p>My Skills:</p><br>
                 <div id="profile_skills">
-                    <p>My Skills:</p><br>
-                    <label>HTML: </label><progress id="prog_html" max="100" value="70">70%</progress>
-                    <label>CSS: </label><progress id="prog_css" max="100" value="60">60%</progress>
-                    <label>JS: </label><progress id="prog_js" max="100" value="30">30%</progress><br>
-                    <label>Leadership: </label><progress id="prof_lead" max="100" value="90"></progress>
-                    <label>Teamwork: </label><progress id="prof_team" max="100" value="95">95%</progress>
-                    <label>Communication: </label><progress id="prof_comm" max="100" value="98">98%</progress><br>
+                    <div id="prog_skills">
+                        <label>HTML: </label><progress id="prog_html" max="100" value="60"></progress>
+                        <label>CSS: </label><progress id="prog_css" max="100" value="80"></progress>
+                        <label>JS: </label><progress id="prog_js" max="100" value="10"></progress><br>
+                    </div>
+                    <div id="prof_skills">
+                        <label>Leadership: </label><progress id="prof_lead" max="100" value="60"></progress>
+                        <label>Teamwork: </label><progress id="prof_team" max="100" value="80"></progress>
+                        <label>Communication: </label><progress id="prof_comm" max="100" value="90"></progress><br>
+                    </div>
+                    <div id="pers_skills">
+                        <label>Cooking: </label><progress id="pers_cook" max="100" value="65"></progress>
+                        <label>Driving: </label><progress id="pers_drive" max="100" value="70"></progress>
+                        <label>Herblore: </label><progress id="pers_herb" max="100" value="30"></progress><br>
+                    </div>
                 </div>
             </div>
             <div id="pic">
                 <p>C:\Users\Tom>open profilepic.jpg</p><br>
-                <img src="images\festival_1.jpg" alt="A Picture of Tom with his family/friends">
+                <img src="images\festival_1.jpg" alt="Tom at a festival">
             </div>
             <div id="command_line">
                 <div id="path">
                     <p>C:\Users\Tom></p>
                 </div>
                 <div id="commands">
-                    <form><input type="text" id="argument" onchange="load(this.value)" autofocus></form>
+                    <form><input type="text" id="commnd" onchange="load(this.value)" autofocus></form>
                     <script>
                         function load(val){
                             switch(val){
@@ -63,7 +72,7 @@
                                     break;
                                 case "open profilepic.jpg":
                                     document.getElementById("profile").style.display = "none";
-                                    document.getElementById("pic").style.display = "block";  
+                                    document.getElementById("pic").style.display = "block"; 
                                     break;
                                 default:
                                     document.getElementById("profile").style.display = "none";
