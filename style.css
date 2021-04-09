@@ -22,7 +22,7 @@
 #os_surround{
     color: #000083;
     text-align: center;
-    margin-top: 5em;
+    margin-top: 10vh;
 }
 /*-------------Body----------------------------*/
 body{
@@ -33,38 +33,49 @@ body{
     height: 100%;
 }
 
-
 /*-------------Body-MainContent---------------------*/
 main{
-    padding: 2em 4em 6em;
-    min-height: 100%;
-    margin-bottom: -1.5em;
+    padding: 10vh 10vw 10vh;
 }
 p{
-    padding: 0 0 10px 0;
+    padding: 0 0 1vh 0;
 }
 
 /*-------------Body-ProfileContent---------------------*/
 #profile{
     display: none;
+    flex-direction: column;
 }
-#profile_text{
-    margin: 0 0 2em 0;
-}
-#profile_skills{
-    margin: 0 0 2em 0;
+
+.skills{
+    display: flex;
+    width: 50vw;
+    min-width: 10vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 progress{
-    width: 5em;
+    width: 10vw;
     background-color: #a9aaaa;
     border: none;
     display: block;
     padding: 4px;
 
 }
+#skills_title{
+    text-align: left;
+}
 /*-------------Body-Picture---------------------*/
-#pic{
+#gallery{
     display:none;
+    flex-direction: column;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 /*-------------Body-CLI---------------------*/
 

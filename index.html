@@ -8,9 +8,9 @@
         <header>
             <div id="nav_bg">
                 <nav class="navbar">
-                    <a href="#index">[Home]</a>
-                    <a href="#profile">[Profile]</a>
-                    <a href="#gallery">[Gallery]</a>
+                    <a href="#index" onclick="load('')">[Home]</a>
+                    <a href="#profile" onclick="load('cat profile.txt')">[Profile]</a>
+                    <a href="#gallery" onclick="load('open gallery')">[Gallery]</a>
                 </nav>
             </div>
                 <h1 aria-label="A profile page for Tom Walker"></h1>
@@ -24,18 +24,20 @@
                 <p>The problem seems to have been caused by the loading the following user profile: tom_walker</p>
                 <br><br>
                 <p>For further information, please enter your commands below.</p>
-                <p>Available commands include: <em>cat profile.txt, open profilepic.jpg</em></p>
+                <p>Available commands include: <em>cat profile.txt, open gallery</em></p>
                 <br>
             </div>
             <div id="profile">
+                <div class="profile_text">
                 <p>C:\Users\Tom>cat profile.txt</p><br>
-                <p id="profile_text">
+                <p>
                 Hi, I'm Tom. I am a budding front-end developer with a background in psychology and neuroscience.
                 I work as the CEO of VeenPool Media, and am experienced in leadership, teamworking and web-dev.
                 In my spare time, when I'm not cooking or chilling with friends and family, I enjoy listening to Electronic, Jazz and Classical music.
                 </p>
-                <p>My Skills:</p><br>
-                <div id="profile_skills">
+                <p id="skills_title">My Skills:</p>
+                </div>
+                <div class="skills" id="profile_skills">
                     <div id="prog_skills">
                         <label>HTML: </label><progress id="prog_html" max="100" value="60"></progress>
                         <label>CSS: </label><progress id="prog_css" max="100" value="80"></progress>
@@ -53,9 +55,19 @@
                     </div>
                 </div>
             </div>
-            <div id="pic">
-                <p>C:\Users\Tom>open profilepic.jpg</p><br>
-                <img src="images\festival_1.jpg" alt="Tom at a festival">
+            <div id="gallery">
+                <p>C:\Users\Tom>open gallery</p><br>
+                <div class="pics">
+                    <div id="pic_1">
+                        <img src="images\festival_1.jpg" alt="Tom at a festival">
+                    </div>
+                    <div id="pic_2">
+                        <img src="images\festival_2.jpg" alt="Tom at a music festival at sunset">
+                    </div>
+                    <div id="pic_3">
+                        <img src="images\festival_3.jpg" alt="Tom looking over the rolling hills at a music festival">
+                    </div>
+                </div>
             </div>
             <div id="command_line">
                 <div id="path">
@@ -67,17 +79,16 @@
                         function load(val){
                             switch(val){
                                 case "cat profile.txt":
-                                    document.getElementById("profile").style.display = "block";
-                                    document.getElementById("pic").style.display = "none";
+                                    document.getElementById("profile").style.display = "flex";
+                                    document.getElementById("gallery").style.display = "none";
                                     break;
-                                case "open profilepic.jpg":
+                                case "open gallery":
                                     document.getElementById("profile").style.display = "none";
-                                    document.getElementById("pic").style.display = "block"; 
+                                    document.getElementById("gallery").style.display = "flex"; 
                                     break;
                                 default:
                                     document.getElementById("profile").style.display = "none";
-                                    document.getElementById("pic").style.display = "none"; 
-                                    alert("Command not recognised");
+                                    document.getElementById("gallery").style.display = "none"; 
                             }
                         }   
                     </script>
