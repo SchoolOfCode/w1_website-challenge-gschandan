@@ -78,6 +78,10 @@ progress{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+img{
+    max-width: 100%;
+}
 /*-------------Body-CLI---------------------*/
 
 #command_line{
