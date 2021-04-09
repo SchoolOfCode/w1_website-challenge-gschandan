@@ -74,21 +74,24 @@
                     <p>C:\Users\Tom></p>
                 </div>
                 <div id="commands">
-                    <form><input type="text" id="commnd" onchange="load(this.value)" autofocus></form>
+                    <form id="inp_form"><input type="text" id="commnd" onchange="load(this.value)" autofocus></form>
                     <script>
                         function load(val){
                             switch(val){
                                 case "cat profile.txt":
                                     document.getElementById("profile").style.display = "flex";
                                     document.getElementById("gallery").style.display = "none";
+                                    document.getElementById("inp_form").reset();
                                     break;
                                 case "open gallery":
                                     document.getElementById("profile").style.display = "none";
-                                    document.getElementById("gallery").style.display = "flex"; 
+                                    document.getElementById("gallery").style.display = "flex";
+                                    document.getElementById("inp_form").reset(); 
                                     break;
                                 default:
                                     document.getElementById("profile").style.display = "none";
-                                    document.getElementById("gallery").style.display = "none"; 
+                                    document.getElementById("gallery").style.display = "none";
+                                    document.getElementById("inp_form").reset(); 
                             }
                         }   
                     </script>
