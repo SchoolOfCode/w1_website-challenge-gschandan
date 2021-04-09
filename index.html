@@ -8,9 +8,9 @@
         <header>
             <div id="nav_bg">
                 <nav class="navbar">
-                    <a href="#index" onclick="load('')">[Home]</a>
-                    <a href="#profile" onclick="load('cat profile.txt')">[Profile]</a>
-                    <a href="#gallery" onclick="load('open gallery')">[Gallery]</a>
+                    <a href="#index">[Home]</a>
+                    <a href="#profile">[Profile]</a>
+                    <a href="#gallery">[Gallery]</a>
                 </nav>
             </div>
                 <h1 aria-label="A profile page for Tom Walker"></h1>
@@ -74,24 +74,7 @@
                     <p>C:\Users\Tom></p>
                 </div>
                 <div id="commands">
-                    <form><input type="text" id="commnd" onchange="load(this.value)" autofocus></form>
-                    <script>
-                        function load(val){
-                            switch(val){
-                                case "cat profile.txt":
-                                    document.getElementById("profile").style.display = "flex";
-                                    document.getElementById("gallery").style.display = "none";
-                                    break;
-                                case "open gallery":
-                                    document.getElementById("profile").style.display = "none";
-                                    document.getElementById("gallery").style.display = "flex"; 
-                                    break;
-                                default:
-                                    document.getElementById("profile").style.display = "none";
-                                    document.getElementById("gallery").style.display = "none"; 
-                            }
-                        }   
-                    </script>
+                    <form id="inp_form"><input type="text" id="commnd" autofocus></form>
                 </div>
             </div>     
         </main>
