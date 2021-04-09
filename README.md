@@ -35,6 +35,9 @@ The client was pleased and amused with the design, and made some feedback sugges
 - The footer was made sticky
 - The profile information content was reviewed and further updated
 
+## Current Site Preview (V2)
+![alt text](https://github.com/SchoolOfCode/w1_website-challenge-gschandan/blob/main/images/fallout_terminal.jpg "Preview image displaying the current homepage design")
+
 ## Directions for Further Work
 1. Use CSS transitions to simulate the scrolling of a terminal for the text content, i.e. it will scroll upwards line by line
 2. Attempt the changing of content with no JS
