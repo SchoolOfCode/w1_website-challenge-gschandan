@@ -7,12 +7,12 @@
 ## Design
 ### Theme
 Windows 95 era BSOD combined with some elements from traditional BIOS interfaces to incorporate interactive elements.  
-![alt text](https://github.com/SchoolOfCode/w1_website-challenge-gschandan/blob/main/images/windows_bsod.jpg "Example image of windows blue screen of death")
-![alt text](https://github.com/SchoolOfCode/w1_website-challenge-gschandan/blob/main/images/windows_bios.jpg "Example image of a windows BIOS interface")
+<img src="images/windows_bsod.jpg" width="90%" alt="Example image of windows blue screen of death"/>
+<img src="images/windows_bios.jpg" width="90%" alt="Example image of a windows BIOS interface"/>
 
 The other potential related theme was a fallout-4 style terminal, which may form a potential future direction for development.  
 
-![alt text](https://github.com/SchoolOfCode/w1_website-challenge-gschandan/blob/main/images/fallout_terminal.jpg "Example image of a fallout(game) terminal interface")
+<img src="images/fallout_terminal.jpg" width="90%" alt="Example image of a fallout(game) terminal interface"/>
 
 ### Inspiration
 The design idea was inspired by the line-commander exercise from week one, and the goal was to imitate a command line interface to fetch the content.
