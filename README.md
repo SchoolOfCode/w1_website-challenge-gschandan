@@ -16,8 +16,8 @@ The other potential related theme was a fallout-4 style terminal, which may form
 
 ### Inspiration
 The design idea was inspired by the line-commander exercise from week one, and the goal was to imitate a command line interface to fetch the content.
-The theme was chosen for nostalgic reasons, and the font was chosen to inspire a more terminal/command-line like environement.
-The idea was for a clean, single page layout which would present an instantly familiar environement, which would be easy and simple to navigate.
+The theme was chosen for nostalgic reasons, and the font was chosen to inspire a more terminal/command-line like environment.
+The idea was for a clean, single page layout which would present an instantly familiar environment, which would be easy and simple to navigate.
 A fail-safe for people who are not familiar with CLI's would be the navigation bar which would lead to the same content.
 
 In retrospect, perhaps choosing an error message/failure page may not be the best way to _represent_ the client, which is why, if I were to repeat this, I would probably opt for a fallout style terminal design or just a simple BIOS style design, if I was going to continue on this theme.
@@ -38,6 +38,6 @@ The client was pleased and amused with the design, and made some feedback sugges
 ## Directions for Further Work
 1. Use CSS transitions to simulate the scrolling of a terminal for the text content, i.e. it will scroll upwards line by line
 2. Attempt the changing of content with no JS
-3. Add a contact area or perhaps a messgae area
+3. Add a contact area or perhaps a message area
 4. Add links (in the navbar or footer) for git-hub and linked in
 5. Further BEM implementation in the HTML code
