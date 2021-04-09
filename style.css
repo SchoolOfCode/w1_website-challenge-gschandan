@@ -45,6 +45,7 @@ p{
 #profile{
     display: none;
     flex-direction: column;
+    padding: 0 5vw 0 0 ;
 }
 
 .skills{
@@ -66,7 +67,7 @@ progress{
 #skills_title{
     text-align: left;
 }
-/*-------------Body-Picture---------------------*/
+/*-------------Body-Gallery---------------------*/
 #gallery{
     display:none;
     flex-direction: column;
@@ -97,4 +98,8 @@ footer{
     background-color: #a9aaaa;
     text-align: center;
     height: 1.5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
