@@ -1,0 +1,109 @@
+/*---------CSS reset---------------------------*/
+*{
+    margin: 0;
+}
+@font-face{
+    font-family: fixedsys;
+    src: url(fixedsys.ttf);
+}
+/*-------------Header-NavBar-------------------------*/
+#nav_bg{
+    background-color: #a9aaaa;
+}
+.navbar{
+    text-align: center;
+    word-spacing: 5em;
+}
+/*-------------Header  - Title-------------------------*/
+#os{
+    background-color: #a9aaaa;
+    font-size: 0.8em;
+}
+#os_surround{
+    color: #000083;
+    text-align: center;
+    margin-top: 10vh;
+}
+/*-------------Body----------------------------*/
+body{
+    background-color:#000083;
+    color: white;
+    font-family: fixedsys;
+    font-size: 1.5em;
+    height: 100%;
+}
+
+/*-------------Body-MainContent---------------------*/
+main{
+    padding: 10vh 10vw 10vh;
+}
+p{
+    padding: 0 0 1vh 0;
+}
+
+/*-------------Body-ProfileContent---------------------*/
+#profile{
+    display: none;
+    flex-direction: column;
+    padding: 0 5vw 0 0 ;
+}
+
+.skills{
+    display: flex;
+    width: 50vw;
+    min-width: 10vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+progress{
+    width: 10vw;
+    background-color: #a9aaaa;
+    border: none;
+    display: block;
+    padding: 4px;
+
+}
+#skills_title{
+    text-align: left;
+}
+/*-------------Body-Gallery---------------------*/
+#gallery{
+    display:none;
+    flex-direction: column;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img{
+    max-width: 100%;
+}
+/*-------------Body-CLI---------------------*/
+
+#command_line{
+    margin-top: 2em;
+    display: inline-flex;
+}
+#commnd{
+    background-color:#000083;
+    color: white;
+    font-family:fixedsys;
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+
+/*-------------Body-Footer---------------------*/
+footer{
+    background-color: #a9aaaa;
+    text-align: center;
+    height: 1.5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
